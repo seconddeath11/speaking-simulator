@@ -1,0 +1,7 @@
+Study the advertisement.
+You are considering using car washing services and you'd like to get more information. In 1.5 minutes you are to ask four direct questions to find out the following:
+1)	working hours
+2)	if they have a discount card
+3)	recommendations
+4)	number of clients per day
+You have 20 seconds to ask each question.

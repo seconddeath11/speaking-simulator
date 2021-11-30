@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block title %} Speaking {% endblock %}
+{% block content %}
+<div class="container vars">
+{% for i in range(1, num+1) %}
+<a role="button" class="btn btn-outline-success var" href="var/{{i}}/blank_">Вариант {{i}}</a>
+
+{% endfor%}
+    </div>
+{% endblock %}

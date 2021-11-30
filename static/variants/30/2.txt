@@ -1,0 +1,7 @@
+Study the advertisement.
+You are considering visiting Louvre museum and you'd like to get more information. In 1.5 minutes you are to ask four direct questions to find out the following:
+1)	available exhibitions
+2)	duration of the tour
+3)	if they are open at weekends
+4)	if they provide the multilingual guide service
+You have 20 seconds to ask each question.

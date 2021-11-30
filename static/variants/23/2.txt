@@ -1,0 +1,8 @@
+Study the advertisement.
+
+You are considering to buy ipad and you'd like to get more information. In 1.5 minutes you are to ask four direct questions to find out the following:
+1)	the amount of internal memory
+2)	if they provide a free delivery service
+3)	if they have special offers
+4)	advantages of the device
+You have 20 seconds to ask each question.

@@ -1,0 +1,78 @@
+body {
+    background: #f2f2f2;
+    /* font-family: 'open_sansregular'; */
+    font-size: 14px;
+    color: #394044;
+    font-family: "Segoe UI";
+}
+h1{
+    font-weight: 300;
+}
+.vars{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+.var{
+    width: 110px;
+    margin: 10px;
+}
+.start-button{
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30vh;
+}
+.headers{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.line{
+height: 3px;
+    background: #2CA1C0;
+    }
+.pics{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+img {
+    max-width: 45%;
+    object-fit: contain;
+}
+.content{
+    margin-top: 30px;
+}
+
+.footer {
+
+  width: 100%;
+  text-align: center;
+
+}
+.progress {
+  background-color: grey;
+  height: 10px;
+  border-radius: 5px;
+}
+
+.progress-bar {
+  height: 10px;
+  background-color: green;
+  border-radius: 5px;
+}
+.foot {
+    display: grid;
+    align-items: center;
+}
+@media screen and (min-device-width: 1024px) {
+    .foot {
+    grid-template-columns: 20% 70% 10%;
+}
+.footer {
+
+  margin-bottom: 50px;
+
+}
+   }

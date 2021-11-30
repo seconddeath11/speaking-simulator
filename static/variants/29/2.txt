@@ -1,0 +1,7 @@
+Study the advertisement.
+You are considering going to the sushi bar and you'd like to get more information. In 1.5 minutes you are to ask four direct questions to find out the following:
+1)	working hours
+2)	special dishes
+3)	if they have free Wi-Fi
+4)	location of the restaurant
+You have 20 seconds to ask each question.

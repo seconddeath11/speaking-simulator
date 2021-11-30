@@ -1,0 +1,7 @@
+Study the advertisement.
+You are considering visiting the Cesky Krumlov city and you'd like to get more information. In 1.5 minutes you are to ask four direct questions to find out the following:
+1)	the most popular sights of the city
+2)	price for the family of three
+3)	recommendations
+4)	services that they provide during the trip
+You have 20 seconds to ask each question.

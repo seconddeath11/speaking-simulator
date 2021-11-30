@@ -1,0 +1,7 @@
+Study the advertisement.
+You are considering visiting Natural history museum and you'd like to get more information. In 1.5 minutes you are to ask four direct questions to find out the following:
+1)	working hours
+2)	number of available exhibitions
+3)	services they provide
+4)	if they have a free internet
+You have 20 seconds to ask each question.

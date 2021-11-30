@@ -1,0 +1,7 @@
+Study the advertisement.
+You are considering using the real estate agent services and you'd like to get more information. In 1.5 minutes you are to ask four direct questions to find out the following:
+1)	if there special offers
+2)	all services that he provides
+3)	online consulting service
+4)	duration of the meeting
+You have 20 seconds to ask each question.

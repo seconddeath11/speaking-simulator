@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block title %} Speaking {% endblock %}
+{% block content %}
+<div class="container">
+<h1>ЕГЭ по
+английскому языку (устная часть) - Вариант {{num}}</h1>
+<div class="line"></div>
+<div class="start-button">
+<a class="btn btn-primary" href="/var/{{num}}/task1/prep">Start test</a>
+    </div>
+    </div>
+{% endblock %}

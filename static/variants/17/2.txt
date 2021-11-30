@@ -1,0 +1,8 @@
+Study the advertisement.
+
+You are considering visiting the fitness club and you'd like to get more information. In 1.5 minutes you are to ask four direct questions to find out the following:
+1)	membership card
+2)	personal trainings
+3)	working hours
+4)	if they have muscle gain programs
+You have 20 seconds to ask each question.

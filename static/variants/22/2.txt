@@ -1,0 +1,7 @@
+Study the advertisement.
+You are considering visiting the gift shop and you'd like to get more information. In 1.5 minutes you are to ask four direct questions to find out the following:
+1)	if they have gifts for anniversary
+2)	availability of discount cards
+3)	size of the shop
+4)	if they have lunch hours
+You have 20 seconds to ask each question.

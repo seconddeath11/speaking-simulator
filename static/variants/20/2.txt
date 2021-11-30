@@ -1,0 +1,8 @@
+Study the advertisement.
+
+You are considering visiting the real estate agency and you'd like to get more information. In 1.5 minutes you are to ask four direct questions to find out the following:
+1)	location of the agency
+2)	services they provide
+3)	if they work at weekends
+4)	competitive advantages
+You have 20 seconds to ask each question.

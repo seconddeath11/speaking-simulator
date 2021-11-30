@@ -1,0 +1,6 @@
+Have a nice holiday!
+You are considering booking a holiday and now you’d like to get more information. In 1.5 minutes you are to ask four direct questions to find out about the following:
+1) ideal destination
+2) travel insurance
+3) excursions
+4) accommodation

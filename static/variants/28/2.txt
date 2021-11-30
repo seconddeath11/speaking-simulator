@@ -1,0 +1,8 @@
+Study the advertisement.
+
+You are considering buying a laptop and you'd like to get more information. In 1.5 minutes you are to ask four direct questions to find out the following:
+1)	if you can get a discount card
+2)	full characteristics of the device
+3)	warranty period
+4)	advantages of the device
+You have 20 seconds to ask each question.

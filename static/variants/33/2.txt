@@ -1,0 +1,7 @@
+Study the advertisement.
+You are considering visiting the tattoo shop and you'd like to get more information. In 1.5 minutes you are to ask four direct questions to find out the following:
+1)	working hours
+2)	if they have a website
+3)	if it hurts during the process
+4)	number of temporary tattoos
+You have 20 seconds to ask each question.

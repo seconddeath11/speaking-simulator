@@ -1,0 +1,7 @@
+Study the advertisement.
+You are considering using an engineering service and you'd like to get more information. In 1.5 minutes you are to ask four direct questions to find out the following:
+1)	services that they provide
+2)	if you can get a discount card
+3)	if they work at weekends
+4)	number of clients per day
+You have 20 seconds to ask each question.

@@ -1,0 +1,9 @@
+Study the advertisement.
+Language Friendly School:
+welcoming all languages
+You are considering taking a language course and now you’d like to get more information. In 1.5 minutes you are to ask four direct questions to find out about the following:
+1.	average class size
+2.	price
+3.	intensive programs
+4.	online classes
+You have 20 seconds to ask each question.

@@ -1,0 +1,8 @@
+Study the advertisement.
+Your Epic Travel Adventure!
+You are considering booking an adventure trip with a tour company and now you’d like to get more information. In 1.5 minutes you are to ask four direct questions to find out about the following:
+1.	the best adventure travel locations
+2.	cancellation and refund policy
+3.	guides
+4.	average group size
+You have 20 seconds to ask each question.
