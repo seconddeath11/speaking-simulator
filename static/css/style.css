@@ -55,6 +55,9 @@ img {
 
   width: 100%;
   text-align: center;
+  position: fixed;
+  bottom: 0;
+
 
 }
 .progress {
@@ -79,12 +82,16 @@ img {
   width: 36px;
 }
 #nextButton{
-    height: 60vh;
     display: flex;
-    align-items: end;
     justify-content: end;
+    margin-right: 30px;
     color: #fff;
     }
+
+.content {
+    height: 65vh;
+    overflow: auto;
+}
 
 #menu__toggle {
   opacity: 0;
@@ -183,7 +190,9 @@ img {
     .foot {
     grid-template-columns: 20% 70% 10%;
 }
-
-.content{
-height: 75vh;}
+.content {
+    height: 75vh;
+}
+.footer{
+margin-bottom: 20px;}
    }

@@ -1,8 +1,6 @@
-Study the advertisement.
 Adopt a furry friend
 You are considering adopting a dog from an animal shelter and now you’d like to get more information. In 1.5 minutes you are to ask four direct questions to find out about the following:
 1.	shelter adoption policies
 2.	age
 3.	illnesses or injuries
 4.	if it lives indoors or outdoors
-You have 20 seconds to ask each question.

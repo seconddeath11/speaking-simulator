@@ -1,1 +1,1 @@
-NUM_OF_VARS = 33
+NUM_OF_VARS = 12

@@ -1,7 +1,5 @@
-Study the advertisement.
 You are considering bringing your pet to a veterinarian for a wellness exam and now you’d like to get more information. In 1.5 minutes you are to ask four direct questions to find out about the following:
 1) basic health exam
 2) services on offer
 3) dental cleaning
 4) flea/ tick meds
-You have 20 seconds to ask each question.

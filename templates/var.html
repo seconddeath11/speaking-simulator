@@ -55,9 +55,11 @@
 <audio controls id="audio" preload="metadata">
   <source src="{{ url_for('static', filename=task.audio) }}" type="audio/mpeg">
 </audio>
-    <div id="nextButton"><a role="button" class="btn btn-primary next_button" onclick="next()">Next task</a></div>
 {% endif %}
 </div>
+{% if task.audio %}
+    <div id="nextButton"><a role="button" class="btn btn-primary next_button" onclick="next()">Next task</a></div>
+{% endif %}
 <div class="footer">
   <div class="container foot">
       <h4 class="prep"></h4>

@@ -25,13 +25,13 @@ def compile_task(var_num, task_num):
         1: Task(task_num, text=text, prep_time=90, answer_time=90),
         2: Task(task_num, text=text, picture1=picture_path(var_num, 2), prep_time=90, answer_time=20),
         3: Task(task_num, audio=audio_path(var_num), prep_time=0, answer_time=270),
-        4: Task(task_num, text=text, picture1=picture_path(var_num, 4, 1),
-                picture2=picture_path(var_num, 4, 2), prep_time=150, answer_time=180)
+        4: Task(task_num, text=text[1:], picture1=picture_path(var_num, 4, 1),
+                picture2=picture_path(var_num, 4, 2), prep_time=150, answer_time=180, project_name=text[0])
     }.get(task_num, 1)
 
 
 def audio_path(var_num):
-    return "variants/" + str(var_num) + "/" + str(var_num) + ".mp3"
+    return "variants/" + str(var_num) + "/" + "3.mp3"
 
 
 def picture_path(var_num, task_num, pic_num=1):
