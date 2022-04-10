@@ -1,9 +1,21 @@
 {% extends 'base.html' %}
-{% block title %} {{task.num}} {% endblock %}
+{% block title %} Task {{task.num}}{% endblock %}
 {% block content %}
-<script src="{{ url_for('static', filename='js/lazysizes.min.js')}}" async></script>
-<div class="container headers"><h1>Task {{task.num}} {%if ans_time%} - Question {{ans_time}} {%endif%}</h1>
+<div class="hamburger-menu">
+    <input id="menu__toggle" type="checkbox" />
+    <label class="menu__btn" for="menu__toggle">
+      <span></span>
+    </label>
 
+    <ul class="menu__box">
+      <li><a class="menu__item" href="{{ url_for('var', var_num=var.num, task_num=1) }}">Task 1</a></li>
+        <li><a class="menu__item" href="{{ url_for('var', var_num=var.num, task_num=2) }}">Task 2</a></li>
+		<li><a class="menu__item" href="{{ url_for('var', var_num=var.num, task_num=3) }}">Task 3</a></li>
+		<li><a class="menu__item" href="{{ url_for('var', var_num=var.num, task_num=4) }}">Task 4</a></li>
+    </ul>
+  </div>
+<a href="/"><img src="{{ url_for('static', filename='img/icons8-home.svg') }}" class="home__link"></a>
+<div class="container headers"><h1>Task <span id="task_num">{{task.num}}</span> <span class="ansTime"></span> </h1>
         </div>
 <div class="container line"></div>
 <div class="container content">
@@ -43,58 +55,89 @@
 <audio controls id="audio" preload="metadata">
   <source src="{{ url_for('static', filename=task.audio) }}" type="audio/mpeg">
 </audio>
+    <div id="nextButton"><a role="button" class="btn btn-primary next_button" onclick="next()">Next task</a></div>
 {% endif %}
 </div>
-<button onclick="redirect()">dddd</button>
 <div class="footer">
   <div class="container foot">
-      {% if prep == 1 %}<h4>Preparation</h4>{% else %}<h4>Answer</h4>{% endif %}
+      <h4 class="prep"></h4>
       <div class="progress">
-  <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="{% if prep == 1 %}{{task.prep_time}}{% else %}{{task.answer_time}}{% endif %}"></div>
+  <div class="progress-bar"></div>
 </div>
     <h4 id="time"></h4>
   </div>
 
 </div>
-
 <script>
-
-function redirect() {
-     window.location.href = "{{next}}";
+    var task_num = {{task.num}};
+var var_num = {{var.num}};
+var prep = (task_num != 3)? 1 : 0;
+var ans_time = 0;
+function next() {
+   if (task_num < 4)
+     window.location.href = "/var" + var_num + "/task" + (task_num + 1);
+   else
+     window.location.href = "/";
 }
 
 function startTimer() {
+
+    document.querySelector(".prep").innerHTML = prep? "Preparation" : "Answer";
     var elem = document.querySelector(".progress-bar");
-var width = -1;
-var duration = {% if prep == 1 %}{{task.prep_time}}{% else %}{{task.answer_time}}{% endif %},
+    navigator.mediaDevices.getUserMedia({ audio: true });
+    var width = 0;
+    elem.style.width = 0 + "%";
+    clearInterval(interval);
+    var duration = prep ? {{task.prep_time}}:{{task.answer_time}},
         display = document.querySelector('#time');
-if ({{task.num}} == 3){
- au = document.getElementById("audio");
- au.load();
-au.onloadeddata = function() {
+    if (task_num == 3){
+    navigator.mediaDevices.getUserMedia({ audio: true }).then(function (stream) {
 
-     document.getElementById("audio").play();
+      au = document.getElementById("audio");
+        au.load();
+        au.onloadeddata = function() {document.getElementById("audio").play();};
+        // stop microphone stream acquired by getUserMedia
+        stream.getTracks().forEach(function (track) { track.stop(); });
+    });
 
-};
-}
-var timer = duration;
-    display.innerHTML = formatTime(duration);
-
-    setInterval(function () {
-        display.innerHTML = formatTime(timer);
-        width += 1 / duration * 100;
-        elem.style.width = width + "%";
+    }
+    var timer = duration;
+        display.innerHTML = formatTime(duration);
+    var interval = setInterval(function () {
         if (--timer < 0) {
-            if ({{prep}} == 1){
-            {%set prep = 0%}}
-            redirect();
+        clearInterval(interval);
+        elem.style.transition = "width 0s";
+        width = 0;
+        elem.style.width = 0 + "%";
+
+        if (task_num == 2 && ans_time != 4){
+                ans_time = ans_time + 1;
+            document.querySelector(".ansTime").innerHTML = " - Question " + ans_time;
         }
+        if (prep){
+            prep = 0;
+
+            startTimer();
+        }else{
+            if (task_num == 2 && ans_time != 4)
+                 startTimer();
+            else
+                 next();
+
+        }}
+        else{
+        elem.style.transition = "width 1s ease";
+        width += (1 / duration) * 100;
+        elem.style.width = width + "%";
+        display.innerHTML = formatTime(timer);
+        }
+
     }, 1000);
-
-
 
 }
 function formatTime(time) {
+  if (time < 0)
+    return "0:00";
   const minutes = Math.floor(time / 60);
   let seconds = time % 60;
   if (seconds < 10) {
@@ -102,7 +145,10 @@ function formatTime(time) {
   }
   return `${minutes}:${seconds}`;
 }
-
+if (task_num == 3){
+    document.querySelector('.footer').style.display = 'none';
+    }
 startTimer();
+
 </script>
 {% endblock %}

@@ -13,7 +13,7 @@ def index():
     return render_template('index.html', num=num)
 
 
-@app.route('/var/<num>/blank_')
+@app.route('/var<num>/blank_')
 def blank_(num):
     return render_template('blank_.html', num=num)
 
@@ -46,11 +46,10 @@ def get_var(var_num):
                    compile_task(var_num, 4))
 
 
-@app.route('/var/<int:var_num>/task<int:task_num>/prep')
+@app.route('/var<int:var_num>/task<int:task_num>')
 def var(var_num, task_num):
     variant = get_var(var_num)
-    return render_template('var.html', task=variant.get_task(task_num), prep=1, var=variant,
-                           next=get_next_page(1, var_num, task_num))
+    return render_template('var.html', task=variant.get_task(task_num), var=variant)
 
 
 def get_next_page(prep, var_num, task, ans_time=None):
@@ -66,14 +65,6 @@ def get_next_page(prep, var_num, task, ans_time=None):
             return "/"
         else:
             return st + str(task + 1) + "/prep"
-
-
-@app.route('/var/<int:var_num>/task<int:task_num>/answer')
-@app.route('/var/<int:var_num>/task<int:task_num>/answer/<int:ans_time>')
-def var_answer(var_num, task_num, ans_time=None):
-    variant = get_var(var_num)
-    return render_template('var.html', task=variant.get_task(task_num), prep=0, var=variant,
-                           next=get_next_page(0, var_num, task_num, ans_time), ans_time=ans_time)
 
 
 if __name__ == '__main__':

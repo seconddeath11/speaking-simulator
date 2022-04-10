@@ -6,7 +6,16 @@
 английскому языку (устная часть) - Вариант {{num}}</h1>
 <div class="line"></div>
 <div class="start-button">
-<a class="btn btn-primary" href="/var/{{num}}/task1/prep">Start test</a>
+<a class="btn btn-primary" href="/var{{num}}/task1">Start test</a>
     </div>
     </div>
+<script>
+    navigator.mediaDevices.getUserMedia({ audio: true })
+      .then(function(stream) {
+        console.log('You let me use your mic!')
+      })
+      .catch(function(err) {
+        console.log('No mic for you!')
+      });
+</script>
 {% endblock %}
