@@ -86,7 +86,6 @@ function startTimer() {
 
     document.querySelector(".prep").innerHTML = prep? "Preparation" : "Answer";
     var elem = document.querySelector(".progress-bar");
-    navigator.mediaDevices.getUserMedia({ audio: true });
     var width = 0;
     elem.style.width = 0 + "%";
     clearInterval(interval);
