@@ -92,17 +92,7 @@ function startTimer() {
     clearInterval(interval);
     var duration = prep ? {{task.prep_time}}:{{task.answer_time}},
         display = document.querySelector('#time');
-    if (task_num == 3){
-    navigator.mediaDevices.getUserMedia({ audio: true }).then(function (stream) {
 
-      au = document.getElementById("audio");
-        au.load();
-        au.onloadeddata = function() {document.getElementById("audio").play();};
-        // stop microphone stream acquired by getUserMedia
-        stream.getTracks().forEach(function (track) { track.stop(); });
-    });
-
-    }
     var timer = duration;
         display.innerHTML = formatTime(duration);
     var interval = setInterval(function () {
