@@ -55,8 +55,7 @@ img {
 
   width: 100%;
   text-align: center;
-  position: fixed;
-  bottom: 0;
+
 
 
 }
@@ -89,7 +88,7 @@ img {
     }
 
 .content {
-    height: 65vh;
+    height: 60vh;
     overflow: auto;
 }
 
@@ -191,7 +190,7 @@ img {
     grid-template-columns: 20% 70% 10%;
 }
 .content {
-    height: 75vh;
+    height: 70vh;
 }
 .footer{
 margin-bottom: 20px;}
