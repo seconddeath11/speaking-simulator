@@ -1,0 +1,7 @@
+Study the advertisement.
+You are considering renting an apartment and now you’d like to get more information. In 1.5 minutes you are to ask four direct questions to find out about the following:
+1. rent
+2. utilities
+3. parking lot
+4. pet policy
+You have 20 seconds to ask each question.
