@@ -1,13 +1,6 @@
-You are going to give an interview. You have to answer five questions. Give full answers to the questions (2−3 sentences). Remember that you have 40 seconds to answer each question.
-Interviewer: Hello everybody! It’s Teenagers Round the World Channel. Our guest today is a teenager from Russia and we are going to discuss friends. We’d like to know our guest’s point of view on this issue. Please answer five questions. So, let’s get started.
-Interviewer: How do you get along with your peers?
-Student: _________________________
-Interviewer: What are the benefits of friendship?
-Student: _________________________
-Interviewer: Where have you met your best friend? How long do you know each other for?
-Student: _________________________
-Interviewer: How do you communicate with your friends?
-Student: _________________________
-Interviewer: How do you spend time together?
-Student: _________________________
-Interviewer: Thank you very much for your interview.
+1. Do you wear a watch? How do you �nd out what time it is?
+2. Do you ever waste time? Why do you think you do that?
+3. How do you like to use your free time? Would you say that you have enough
+free time?
+4. What is the most time-consuming thing you do in your life?
+5. Do you have any good techniques for organising your time?
