@@ -1,4 +1,5 @@
 The best place for your best moments!
+You are going to visit a local amusement park and now you’d like to get more information. In 1.5 minutes you are to ask four direct questions to find out about the following:
 1.	location
 2.	admission fee
 3.	if taking photos is allowed
